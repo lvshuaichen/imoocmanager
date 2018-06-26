@@ -149,12 +149,12 @@ module.exports = {
             include: paths.appSrc,
             loader: require.resolve('babel-loader'),
             options: {
-              
-              compact: true,
               plugins: ['import', [{
                 libraryName: 'antd',
                 style: true
-              }]]
+              }]],
+              compact: true,
+
             },
           },
           // "postcss" loader applies autoprefixer to our CSS.
